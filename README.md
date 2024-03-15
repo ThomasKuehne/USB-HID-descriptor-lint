@@ -1,6 +1,6 @@
 # USB-HID-descriptor-lint
 
-This tool uses (libusb)[https://github.com/libusb/libusb] to check all USB devices with interface class HID:
+This tool uses [libusb](https://github.com/libusb/libusb) to check all USB devices with interface class HID:
 
 1. that the USB configuration descriptor can be retrieved
 2. that the USB HID descriptor(s) can be retrieved
