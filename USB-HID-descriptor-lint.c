@@ -205,8 +205,8 @@ int main(int argc, char** argv){
 				// sanity checks
 				if(0 < from_CONFIG || 0 < from_HID || 0 < from_actual){
 					printf("\n      === result for device %04x:%04x interface %i ===\n", desc.idVendor, desc.idProduct, idf.bInterfaceNumber);
-					printf(">     %s - %zi vs %zi (USBD_HID_CfgDesc vs actual)\n", from_CONFIG == from_actual ? "OK " : "BAD", from_CONFIG, from_actual);
-					printf(">     %s - %zi vs %zi (USBD_HID_CfgDesc vs USBD_HID_Desc)\n", from_CONFIG == from_HID ? "OK " : "BAD", from_CONFIG, from_HID);
+					printf(">     %s - %zi vs %zi (configuration descriptor vs actual HID report)\n", from_CONFIG == from_actual ? "OK " : "BAD", from_CONFIG, from_actual);
+					printf(">     %s - %zi vs %zi (configuration descriptor vs HID descriptor)\n", from_CONFIG == from_HID ? "OK " : "BAD", from_CONFIG, from_HID);
 					printf("\n");
 				}
 

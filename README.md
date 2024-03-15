@@ -34,8 +34,8 @@ device 093a:2530 with 1 interfaces
       05 01 09 02 a1 01 09 01 a1 00 05 09 19 01 29 05 15 00 25 01 75 01 95 05 81 02 75 03 95 01 81 03 06 00 ff 09 40 95 02 75 08 15 81 25 7f 81 02 05 01 09 38 15 81 25 7f 75 08 95 01 81 06 09 30 09 31 16 01 80 26 ff 7f 75 10 95 02 81 06 c0 c0
 
       === result for device 093a:2530 interface 0 ===
->     OK  - 79 vs 79 (USBD_HID_CfgDesc vs actual)
->     OK  - 79 vs 79 (USBD_HID_CfgDesc vs USBD_HID_Desc)
+>     OK  - 79 vs 79 (configuration descriptor vs actual HID report)
+>     OK  - 79 vs 79 (configuration descriptor vs HID descriptor)
 ```
 
 # buggy device
@@ -59,6 +59,6 @@ device 1209:4f54 with 1 interfaces
       05 01 09 05 a1 01 a1 00 05 09 19 01 29 18 15 00 25 01 95 18 75 01 81 02 05 01 09 30 09 31 09 32 09 33 09 34 09 35 09 36 09 37 16 00 00 26 ff 07 75 10 95 08 81 02 c0 c0
 
       === result for device 1209:4f54 interface 0 ===
->     OK  - 56 vs 56 (USBD_HID_CfgDesc vs actual)
->     BAD - 56 vs 74 (USBD_HID_CfgDesc vs USBD_HID_Desc)
+>     OK  - 56 vs 56 (configuration descriptor vs actual HID report)
+>     BAD - 56 vs 74 (configuration descriptor vs HID descriptor)
 ```
